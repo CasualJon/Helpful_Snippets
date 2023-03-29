@@ -11,3 +11,8 @@ git config --global alias.alias_name '!git add -A && git commit -m'
 # To see a list of aliases configured:
 # git config --get-regexp '^alias\.'
 # *OR& git config --global --list (then just read through to find "alias."
+
+
+# Current helpful aliases:
+(list: List # of lines per file and project total)    git ls-files | xargs wc -l
+(ac: add all and commit with the message passed)      git add -A && git commit -m
