@@ -1,8 +1,8 @@
 git config --global alias.alias_name '!git add -A && git commit -m'
 
 # Note that the command is enclosed in single quotes
-# If chaining together multiple commands together, need to start with an "!" and use the "git" command (if a single command, "git" is assumed
-# It doesn't appear that git will allow variables (so if trying to do "git checkout -b new-feature main" where new-feature was parameterized, we might need a shell function
+# If chaining together multiple commands together, need to start with an "!" and use the "git" command (if a single command, "git" is assumed)
+# It doesn't appear that git will allow variables... so if trying to do "git checkout -b new-feature main" where new-feature was parameterized, we might need a shell function
 
 # git config --global alias.new-feature = '!f() { git checkout -b $1 main; } f'
 # though zsh is not liking this?
@@ -10,7 +10,7 @@ git config --global alias.alias_name '!git add -A && git commit -m'
 
 # To see a list of aliases configured:
 # git config --get-regexp '^alias\.'
-# *OR& git config --global --list (then just read through to find "alias."
+# *OR* git config --global --list (then just read through to find "alias")
 
 
 # Current helpful aliases:
